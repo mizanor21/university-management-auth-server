@@ -9,7 +9,7 @@ app.use(express.urlencoded({extended:true}))
 const port = 5000
 
 app.get('/', (req:Request, res:Response) => {
-  res.send('Hello World!')
+  res.send('Worked successfully!')
 })
 
 export default app
