@@ -6,8 +6,8 @@ app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
-app.get('/', (req: any, res: any) => {
-  res.send('Worked successfully but husky problem!')
+app.get('/', (req: Request, res: Response) => {
+  res.send('Worked successfully!')
 })
 
 export default app
