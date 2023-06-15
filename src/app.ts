@@ -7,7 +7,7 @@ app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 
 app.get('/', (req: any, res: any) => {
-  res.send('Worked successfully!')
+  res.send('Worked successfully but husky problem!')
 })
 
 export default app
