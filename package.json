@@ -12,7 +12,7 @@
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.ts": "npm run prettier-lint"
+    "src/**/*.ts": "npm run prettier-lint"
   },
   "keywords": [],
   "author": "Mizanor Rahman",
