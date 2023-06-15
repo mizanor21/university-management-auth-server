@@ -5,17 +5,14 @@
   "main": "src/server.ts",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/server.ts",
-    "format": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
+    "prettier": "prettier --ignore-path .gitignore --write \"**/*.+(js|ts|json)\"",
     "lint": "eslint --ignore-path .eslintignore --ext .js,.ts .",
-    "format_lint": "npm run format && npm run lint",
+    "prettier-lint": "npm run prettier && npm run lint",
     "test": "echo \"Error: no test specified\" && exit 1",
     "prepare": "husky install"
   },
   "lint-staged": {
-    "*.ts": [
-      "eslint",
-      "prettier --write"
-    ]
+    "*.ts": "prettier-lint"
   },
   "keywords": [],
   "author": "Mizanor Rahman",
